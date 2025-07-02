@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/todo.dart';
 
 class TodoService {
-  static const String baseUrl = 'http://192.168.100.13:3000/todos';
+  static const String baseUrl = 'https://flutter-nodejs-todo-app.onrender.com/todos';
 
   static Future<List<Todo>> fetchTodos() async {
     final response = await http.get(Uri.parse(baseUrl));
